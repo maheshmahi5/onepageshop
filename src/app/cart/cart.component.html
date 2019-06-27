@@ -1,0 +1,10 @@
+<table class="table2" border="1">
+    <h1>Cart</h1>
+    <tr *ngFor="let citem of citems let n=index" >
+      <td>item {{i}}
+        <pre>               {{citem.item}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button (click)="Removefromcart(citem,n)">Remove</button>
+                   {{citem.price}} 
+        </pre>
+      </td>
+    </tr>
+    </table>

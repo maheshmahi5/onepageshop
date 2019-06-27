@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!--The content below is only a placeholder and can be replaced.--
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -16,6 +16,9 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
-
+</ul-->
+<h1 style="text-align: center">STORE</h1>
+<app-catalog (data)='orders=$event' (data1)='orders1=$event'></app-catalog>
+<app-cart [citems]='orders' [amount1]='orders1' (data1)='orders1=$event'></app-cart>
+<app-checkout [amount1]='orders1'></app-checkout>
 <router-outlet></router-outlet>

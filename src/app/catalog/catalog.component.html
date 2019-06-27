@@ -1,0 +1,10 @@
+<h2>Catalog</h2>
+  <table class="table1" border="1">
+  <tr *ngFor="let item of items let i=index ">
+    <td>item {{i}}
+      <pre>               {{item.item}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button (click)="Addtocart(item)">Add to Cart</button>
+                 {{item.price}} 
+      </pre>
+    </td>
+  </tr>
+  </table>
